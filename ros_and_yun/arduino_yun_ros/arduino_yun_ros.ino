@@ -13,7 +13,7 @@ char hello[20] = "good";
 void setup() {
   Bridge.begin();
   delay(2000);
-  nh.getHardware()->setConnection(server, 11411);
+  nh.getHardware()->setConnection(server, port);
   nh.initNode();
   nh.advertise(chatter);
 }
