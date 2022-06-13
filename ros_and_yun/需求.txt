@@ -1,0 +1,12 @@
+sudo apt install ros-noetic-video-stream-opencv
+sudo apt install ros-noetic-rosserial
+sudo apt install ros-noetic-rosserial-arduino
+
+
+opkg update  
+opkg install kmod-video-uvc  
+opkg install fswebcam
+cd /www  
+mkdir webcam  
+cd /www/webcam  
+opkg install mjpg-streamer  
